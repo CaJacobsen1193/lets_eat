@@ -1,0 +1,32 @@
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  height: 70px;
+  font-family: "Nata Sans", sans-serif;
+}
+
+.main {
+  background-color: black;
+}
+
+.title h1 {
+  margin: 0;
+  color: white;
+}
+
+.nav {
+  width: 90%;
+  background-image: url('./images/banner.jpg');
+  background-position: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.businesses {
+  width: 90%;
+  background-color: whitesmoke;
+  margin: 0 auto;
+  padding: 20px;
+}

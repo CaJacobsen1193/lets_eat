@@ -1,0 +1,38 @@
+.business {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.image-container img {
+    height: 225px;
+    width: 250px;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+.business-info,
+.business-reviews {
+    text-align: center;
+    font-family: "Figtree", sans-serif;
+}
+
+.business-details {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    line-height: 2px;
+}
+
+h2 {
+    margin: 0;
+    color: rgb(89, 8, 8);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.business-reviews {
+    color: rgb(89, 8, 8);
+}
