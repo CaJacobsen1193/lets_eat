@@ -12,19 +12,37 @@ function SearchBar() {
         e.currentTarget.style.border = '1px solid white';
         };
 
+    const handleTermChange = (e) => {
+        setSearchTerm(e.target.value);
+    };
+
+    const handleLocationChange = (e) => {
+        setSearchLocation(e.target.value);
+    };
+
+    const handleSubmit = (e) => {
+        console.log(`Searching Yelp with ${searchTerm}, ${searchLocation}, ${sortOption}`)
+    };
+
     return (
         <div className='search-bar'>
             <div className='filters'>
-                <button value='Best Match' onClick={handleClick}>Best Match</button>
-                <button value='Highest Rated' onClick={handleClick}>Highest Rated</button>
-                <button value='Most Reviewed' onClick={handleClick}>Most Reviewed</button>
+                <button value='best_match' onClick={handleClick}>Best Match</button>
+                <button value='highest_rated' onClick={handleClick}>Highest Rated</button>
+                <button value='most_reviewed' onClick={handleClick}>Most Reviewed</button>
             </div>
             <div className='inputs'>
-                <input name='business' placeholder='Seach Businesses'/>
-                <input name='location' placeholder='Search Locations' />
+                <input name='business' 
+                placeholder='Seach Businesses' 
+                value={searchTerm}
+                onChange={handleTermChange}/>
+                <input name='location' 
+                placeholder='Search Locations' 
+                value={searchLocation}
+                onChange={handleLocationChange} />
             </div>
             <div className='submit'>
-                <button name='submit-button'>Search</button>
+                <button name='submit-button' onClick={handleSubmit}>Search</button>
             </div>
         </div>
 
