@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import searchBusinesses from '../utils/yelp';
+import BusinessList from './BusinessList';
 import './SearchBar.css';
 
-function SearchBar() {
+function SearchBar(props) {
     const [searchTerm, setSearchTerm] = useState('');
     const [searchLocation, setSearchLocation] = useState('');  
-    const [sortOption, setSortOption] = useState('Best Match');
+    const [sortOption, setSortOption] = useState('best_match');
 
     const handleClick = (e) => {
         setSortOption(e.currentTarget.value);
@@ -21,19 +23,19 @@ function SearchBar() {
     };
 
     const handleSubmit = (e) => {
-        console.log(`Searching Yelp with ${searchTerm}, ${searchLocation}, ${sortOption}`)
+        props.getBusinesses(searchTerm, searchLocation, sortOption);
     };
 
     return (
         <div className='search-bar'>
             <div className='filters'>
                 <button value='best_match' onClick={handleClick}>Best Match</button>
-                <button value='highest_rated' onClick={handleClick}>Highest Rated</button>
-                <button value='most_reviewed' onClick={handleClick}>Most Reviewed</button>
+                <button value='rating' onClick={handleClick}>Highest Rated</button>
+                <button value='review_count' onClick={handleClick}>Most Reviewed</button>
             </div>
             <div className='inputs'>
                 <input name='business' 
-                placeholder='Seach Businesses' 
+                placeholder='Search Keyword' 
                 value={searchTerm}
                 onChange={handleTermChange}/>
                 <input name='location' 
