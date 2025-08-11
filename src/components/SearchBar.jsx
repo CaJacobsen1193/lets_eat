@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import searchBusinesses from '../utils/yelp';
-import BusinessList from './BusinessList';
 import './SearchBar.css';
 
 function SearchBar(props) {

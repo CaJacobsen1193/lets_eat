@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import Business from './components/Business';
 import BusinessList from './components/BusinessList';
 import SearchBar from './components/SearchBar';
 import Footer from './components/Footer';
-import image from './images/pizza.jpg';
 import searchBusinesses from './utils/yelp';
 import './App.css';
 
