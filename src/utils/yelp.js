@@ -1,4 +1,4 @@
-const yelpApi = 'Id4ASZyvyGRcjGto9oHFApHs3fuvay_tlk-Q4tD1Sofdgs_DLZL3KFSZuXZHGODZ6i1x4VtFw2Q2X9hc0H1iJkdqkmw-oZvBPJ-NVOduqaq5V01MrkmX49vv0j2aaHYx'
+const yelpApi = YOUR_API_KEY_HERE
 const yelpBaseUrl = 'https://api.yelp.com/v3';
 
 async function searchBusinesses(searchTerm, searchLocation, sortOption) {
