@@ -28,7 +28,7 @@ function App() {
   return (
     <div className='main'>
       <div className='title'>
-        <h1>Ravenous</h1>
+        <h1>Let's Eat!</h1>
       </div>
       <div className='nav'>
         <SearchBar getBusinesses={getBusinesses}/>

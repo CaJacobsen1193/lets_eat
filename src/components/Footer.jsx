@@ -5,7 +5,7 @@ function Footer() {
     return (
         <div className='footer'>
             <div className='footer-title'>
-                <p>Ravenous</p>
+                <p>Let's Eat!</p>
             </div>
             <div className='contact'>
                 <p>Contact Us</p>
