@@ -1,4 +1,4 @@
-# Let's Eat — Yelp Restaurant Finder
+# Let's Eat: Yelp Restaurant Finder
 
 A simple React app that searches Yelp for restaurants using a search term and location. It also supports sorting by Best Match, Highest Rated, and Most Reviewed. The UI displays core business info like name, image, rating, review count, and address.
 
